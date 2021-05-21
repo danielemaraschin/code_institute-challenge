@@ -6,3 +6,8 @@ body{
 h1{
     font-size: 300%;
 }
+
+h1, h2{   
+    color: orange;
+    text-transform: uppercase;
+}
