@@ -2,6 +2,10 @@ body{
     font-family: Arial;
     color: slategrey;
 }
+#container {
+    width: 60%;
+    margin: auto;
+}
 
 h1{
     font-size: 300%;
@@ -17,12 +21,22 @@ img{
 }
 footer{
     margin-top: 50px;
-    background-color: slategrey;
-    color: white
+    background-color: orange;
+    color: white;
+    margin-right: 70px;
 }
 footer p{
-    text-align: right;
+    text-align: center;
     margin-right: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
+}
+
+@media screen and (max-width: 768px){
+    #container{
+        width: 90%; 
+    }
+    h1{
+        font-size: 200%;
+    }
 }
