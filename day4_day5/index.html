@@ -19,7 +19,7 @@
     
             </header>
             
-            <section id="ingredients" onmouseover="ingredientHover()" onmouseout="ingredientsNormal">
+            <section id="ingredients" onmouseover="ingredientHover()" onmouseout="ingredientsNormal()">
                 <h2>ingredients<i class="fa fa-coffee" aria-hidden="true"></i></h2>
                 <ul>
                     <li>Tea Bag</li>
@@ -29,7 +29,7 @@
                 </ul>
             </section>
             
-            <section id="preparation">
+            <section id="preparation" onmouseover="preparationHover()" onmouseout="preparationNormal()">
                 <h2>preparation<i class="fa fa-spoon" aria-hidden="true"></i></h2>
                 <ol>
                     <li>
@@ -64,6 +64,18 @@
             
             function ingredientHover(){
                 document.getElementById("ingredients").firstElementChild.firstElementChild.style.fontSize ="300%";
+            }
+            
+            function ingredientsNormal(){
+                document.getElementById("ingredients").firstElementChild.firstElementChild.style.fontSize ="100%";
+            }
+
+            function preparationHover(){
+                document.getElementById("preparation").firstElementChild.firstElementChild.style.fontSize ="300%";
+            }
+            
+            function preparationNormal(){
+                document.getElementById("preparation").firstElementChild.firstElementChild.style.fontSize ="100%";
             }
         </script>
 	</body>
