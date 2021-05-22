@@ -19,7 +19,7 @@
     
             </header>
             
-            <section id="ingredients" onmouseover="ingredientHover()">
+            <section id="ingredients" onmouseover="ingredientHover()" onmouseout="ingredientsNormal">
                 <h2>ingredients<i class="fa fa-coffee" aria-hidden="true"></i></h2>
                 <ul>
                     <li>Tea Bag</li>
@@ -60,8 +60,11 @@
                 <p>Copyright Me 2020</p>
             </footer>
         </div>
-
-
-		<script src="script.js"></script>
+		<script src="script.js">
+            
+            function ingredientHover(){
+                document.getElementById('ingredients').firstElementChild.firstElementChild.style.fontSize="300%";
+            }
+        </script>
 	</body>
 </html>
